@@ -1,5 +1,5 @@
 import { UserButton } from "@clerk/nextjs";
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,24 +21,32 @@ export default function Home() {
             </svg>
           </a>
 
-          <div
-            className="flex flex-1 items-center justify-end md:justify-between">
+          <div className="flex flex-1 items-center justify-end md:justify-between">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
                   <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="/">Home</Link>
+                    href="/"
+                  >
+                    Home
+                  </Link>
                 </li>
                 <li>
                   <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="/">About</Link>
+                    href="/"
+                  >
+                    About
+                  </Link>
                 </li>
                 <li>
                   <Link
                     className="text-gray-500 transition hover:text-gray-500/75"
-                    href="/">Contact</Link>
+                    href="/"
+                  >
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -50,5 +58,5 @@ export default function Home() {
         </div>
       </header>
     </main>
-  )
+  );
 }
