@@ -4,4 +4,4 @@ async function Page() {
     return <SignUp />;
 }
 
-export default Page
+export default Page;
