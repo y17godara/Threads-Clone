@@ -2,7 +2,11 @@ import React from 'react'
 
 function TopBar() {
   return (
-    <div>TopBar</div>
+    <>
+    <nav className="top-bar">
+      
+    </nav>
+    </>
   )
 }
 
