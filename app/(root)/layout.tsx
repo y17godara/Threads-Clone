@@ -3,12 +3,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 
-import {
-  TopBar,
-  BottomBar,
-  LeftSidebar,
-  RightSidebar,
-} from "@components/index";
+import TopBar from "@shared/TopBar";
+import BottomBar from "@shared/BottomBar";
+import LeftSidebar from "@shared/LeftSidebar";
+import RightSidebar from "@shared/RightSidebar";
 
 export const metadata: Metadata = {
   title: "Threads",

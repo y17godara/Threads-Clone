@@ -1,4 +1,4 @@
-import { AccountProfile } from "@components/index";
+import AccountProfile from "@forms/AccountProfile";
 import { currentUser } from "@clerk/nextjs";
 
 interface Props {
@@ -16,11 +16,11 @@ async function Page() {
   const userData = {
     id: user?.id,
     objectId: userInfo?._id,
-    username: userInfo?.username || user?.username, 
-    name: userInfo?.name || user?.firstName + ' ' + user?.lastName || '',
-    bio: userInfo?.bio || '',
-    image: userInfo?.image || user?.imageUrl || '/assets/avtUrl.jpg',
-  }
+    username: userInfo?.username || user?.username,
+    name: userInfo?.name || user?.firstName + " " + user?.lastName || "",
+    bio: userInfo?.bio || "",
+    image: userInfo?.image || user?.imageUrl || "",
+  };
 
   return (
     <>
@@ -31,10 +31,7 @@ async function Page() {
         </p>
 
         <section className="mt-9 bg-dark-2 p-10">
-          <AccountProfile
-            user={userData}
-            btnTitle="Continue"
-          />
+          <AccountProfile user={userData} btnTitle="Continue" />
         </section>
       </main>
     </>

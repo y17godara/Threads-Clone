@@ -4,7 +4,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import { SignOutButton, SignedIn } from "@clerk/nextjs";
 import { sidebarLinks } from "@constants/index";
 
 function BottomBar() {

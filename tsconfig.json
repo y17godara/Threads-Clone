@@ -22,8 +22,13 @@
     "paths": {
       "@/*": ["./*"],
       "@components/*": ["./components/*"],
+      "@cards/*": ["./components/cards/*"],
+      "@forms/*": ["./components/forms/*"],
+      "@shared/*": ["./components/shared/*"],
+      "@ui/*": ["./components/ui/*"],
       "@styles/*": ["./styles/*"],
-      "@constants/*": ["./constants/*"]
+      "@constants/*": ["./constants/*"],
+      "@lib/*": ["./lib/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
